@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Tools Hub</title>
+ 
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* Body Styling */
+    body {
+      background: #0a0f25;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    /* Header Section */
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: linear-gradient(45deg, #1e3a8a, #0f172a);
+      color: #f1f5f9;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+      margin-bottom: 2rem;
+    }
+
+    /* Search Bar */
+    .search-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+
+    .search-container input {
+      padding: 0.5rem 1rem;
+      width: 70%;
+      max-width: 500px;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .search-container input:focus {
+      outline: none;
+      border-color: #60a5fa;
+    }
+
+    /* Main Section */
+    main {
+      padding: 2rem 1rem;
+    }
+
+    /* Section Titles */
+    section {
+      margin-bottom: 3rem;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #93c5fd;
+    }
+
+    /* Tool Grid */
+    .tool-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    /* Tool Card Styling */
+    .tool-card {
+      background: #1e293b;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .tool-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #60a5fa;
+      text-decoration: none;
+    }
+
+    .tool-card h3:hover {
+      text-decoration: underline;
+      color: #93c5fd;
+    }
+
+    .tool-card p {
+      opacity: 0.9;
+    }
+
+    .tool-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Footer Section */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #0f172a;
+      color: #9ca3af;
+    }
+
+    /* Hidden class for filtering */
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<header>
+    <div class="container">
+      <h1>AI Tools Hub</h1>
+      <p>Explore and categorize the most powerful AI tools at your fingertips.</p>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search tools...">
+      </div>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <!-- General AI Tools -->
+    <section id="general">
+      <h2>General AI Tools</h2>
+      <div class="tool-grid">
+        <div class="tool-card"><a href="https://toolify.ai" target="_blank"><h3>Toolify.ai</h3></a><p>List all AI tools.</p></div>
+        <div class="tool-card"><a href="https://answerai.com" target="_blank"><h3>AnswerAI</h3></a><p>Quick answers for objective types.</p></div>
+        <div class="tool-card"><a href="https://mindluster.com" target="_blank"><h3>MindLuster</h3></a><p>All Skills Available.</p></div>
+        <div class="tool-card"><a href="https://isensehub.ai" target="_blank"><h3>iSenseHub.ai</h3></a><p>All-in-one AI.</p></div>
+        <div class="tool-card"><a href="https://study.new" target="_blank"><h3>Study.new</h3></a><p>Chat and summarize videos.</p></div>
+        <div class="tool-card"><a href="https://odoo.com" target="_blank"><h3>Odoo.com</h3></a><p>Free invoicing tool.</p></div>
+        <div class="tool-card"><a href="https://napkin.ai" target="_blank"><h3>Napkin.ai</h3></a><p>Convert text to visuals.</p></div>
+        <div class="tool-card"><a href="https://studyfetch.com" target="_blank"><h3>Studyfetch.com</h3></a><p>Create accurate notes.</p></div>
+      </div>
+    </section>
+
+    <!-- Presentation & Productivity Tools -->
+    <section id="presentation">
+      <h2>Presentation & Productivity Tools</h2>
+      <div class="tool-grid">
+        <div class="tool-card"><a href="https://pitch.com" target="_blank"><h3>Pitch.com</h3></a><p>AI Presentation Builder.</p></div>
+        <div class="tool-card"><a href="https://gamma.app" target="_blank"><h3>Gamma.app</h3></a><p>For making presentations.</p></div>
+        <div class="tool-card"><a href="https://www.slideteam.net/Free-Online-AI-Presentation-Maker" target="_blank"><h3>SlideTeam</h3></a><p>Free online presentations.</p></div>
+        <div class="tool-card"><a href="https://chrome.google.com" target="_blank"><h3>ChatGPT Writer</h3></a><p>Email assistant extension.</p></div>
+        <div class="tool-card"><a href="https://voicify.ai" target="_blank"><h3>Voicify</h3></a><p>Voice changer.</p></div>
+      </div>
+    </section>
+
+    <!-- CSS & Web Development Tools -->
+    <section id="web-dev">
+      <h2>CSS & Web Development Tools</h2>
+      <div class="tool-grid">
+        <div class="tool-card"><a href="https://10015.io" target="_blank"><h3>10015.io</h3></a><p>CSS Components.</p></div>
+        <div class="tool-card"><a href="https://hyperui.dev" target="_blank"><h3>HyperUI</h3></a><p>Tailwind CSS components.</p></div>
+        <div class="tool-card"><a href="https://cssanimation.io" target="_blank"><h3>CSSAnimation.io</h3></a><p>Create CSS animations.</p></div>
+        <div class="tool-card"><a href="https://layout.bradwoods.io" target="_blank"><h3>Layout.bradwoods.io</h3></a><p>CSS Layout templates.</p></div>
+        <div class="tool-card"><a href="https://fkhadra.github.io/react-toastify/introduction" target="_blank"><h3>React Toastify</h3></a><p>React notifications.</p></div>
+        <div class="tool-card"><a href="https://driverjs.com" target="_blank"><h3>Driver.js</h3></a><p>Product tours and highlights.</p></div>
+        <div class="tool-card"><a href="https://fluttercomponentlibrary.com" target="_blank"><h3>Flutter Components</h3></a><p>Reusable UI components.</p></div>
+      </div>
+    </section>
+
+    <!-- Media & Creativity Tools -->
+    <section id="media">
+      <h2>Media & Creativity Tools</h2>
+      <div class="tool-grid">
+        <div class="tool-card"><a href="https://livelywallpaper.net" target="_blank"><h3>Lively Wallpaper</h3></a><p>PC live wallpapers.</p></div>
+        <div class="tool-card"><a href="https://dafont.com" target="_blank"><h3>Dafont.com</h3></a><p>Explore free fonts.</p></div>
+        <div class="tool-card"><a href="https://cssfontstack.com" target="_blank"><h3>CSSFontStack</h3></a><p>Pre-installed web fonts.</p></div>
+        <div class="tool-card"><a href="https://mycolor.space" target="_blank"><h3>MyColor.Space</h3></a><p>Generate color palettes.</p></div>
+        <div class="tool-card"><a href="https://toonme.com" target="_blank"><h3>ToonMe</h3></a><p>Cartoon yourself.</p></div>
+        <div class="tool-card"><a href="https://removebg.com" target="_blank"><h3>Remove.bg</h3></a><p>Remove image backgrounds.</p></div>
+        <div class="tool-card"><a href="https://whitescreen.online" target="_blank"><h3>WhiteScreen.online</h3></a><p>Smart online app.</p></div>
+        <div class="tool-card"><a href="https://keyprank.com" target="_blank"><h3>KeyPrank</h3></a><p>Prank tool.</p></div>
+        <div class="tool-card"><a href="https://ray.so" target="_blank"><h3>Ray.so</h3></a><p>Create code snippets.</p></div>
+        <div class="tool-card"><a href="https://supermeme.ai" target="_blank"><h3>SuperMemeAI</h3></a><p>Meme creator.</p></div>
+      </div>
+    </section>
+
+    <!-- Utility Tools -->
+    <section id="utilities">
+      <h2>Utility Tools</h2>
+      <div class="tool-grid">
+        <div class="tool-card"><a href="https://tubeonai.com" target="_blank"><h3>TubeonAI</h3></a><p>Quick video summaries.</p></div>
+        <div class="tool-card"><a href="https://upscale.media" target="_blank"><h3>Upscale.media</h3></a><p>Enhance image quality.</p></div>
+        <div class="tool-card"><a href="https://www.iloveimg.com" target="_blank"><h3>ILoveImage</h3></a><p>Edit and enhance images.</p></div>
+        <div class="tool-card"><a href="https://photomath.com" target="_blank"><h3>Photomath</h3></a><p>Solve math by photo.</p></div>
+        <div class="tool-card"><a href="https://mathway.com" target="_blank"><h3>MathWay</h3></a><p>Math problem solver.</p></div>
+        <div class="tool-card"><a href="https://math.microsoft.com" target="_blank"><h3>Microsoft Math Solver</h3></a><p>Advanced math solutions.</p></div>
+      </div>
+    </section>
+
+    <!-- Security Tools -->
+    <section id="security">
+      <h2>Security Tools</h2>
+      <div class="tool-grid">
+        <div class="tool-card"><a href="https://squarex.ai" target="_blank"><h3>SquareX</h3></a><p>Chrome extension for safety.</p></div>
+        <div class="tool-card"><a href="https://cybercrime.gov.in" target="_blank"><h3>Cybercrime Report</h3></a><p>Report online scams.</p></div>
+        <div class="tool-card"><a href="https://report.stopncii.org" target="_blank"><h3>Stop NCII</h3></a><p>Delete deepfake images.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2024 AI Tools Hub. Designed for tech enthusiasts.</p>
+    </div>
+  </footer>
+  <script>
+    // JavaScript for Search Functionality
+    const searchInput = document.getElementById('searchInput');
+    const toolCards = document.querySelectorAll('.tool-card');
+
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.toLowerCase().trim();
+      toolCards.forEach((card) => {
+        const title = card.querySelector('h3').textContent.toLowerCase();
+        const description = card.querySelector('p').textContent.toLowerCase();
+        if (title.includes(query) || description.includes(query)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
